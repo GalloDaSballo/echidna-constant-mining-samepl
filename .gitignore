@@ -24,3 +24,8 @@ emv-*-certora*
 /types
 /cache_hardhat
 /artifacts
+
+# Recon
+/crytic-export
+/medusa
+/echidna
