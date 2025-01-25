@@ -17,10 +17,8 @@ abstract contract TargetFunctions is BaseTargetFunctions, Properties {
         morpho.borrow(marketParams, assets, shares, onBehalf, receiver);
     }
 
-    function morpho_createMarket() public returns (MarketParams memory) {
+    function morpho_createMarket() public {
         morpho.createMarket(marketParams);
-
-        return marketParams;
     }
 
     function morpho_enableIrm(MarketParams memory marketParams) public {
